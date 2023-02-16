@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is a HTML5 coffee template using bootstrap4">
+  <meta name="keywords"
+    content="coding, template, coffee template, html, css, js, javascript, jquery, bootstrap, bootstrap4">
+  <meta name="author" content="Tahmasib Shirinzadeh">
+  <title>Web World</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <!-- owl carousel css  -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- mosaic gallery-->
+  <!-- <link rel="stylesheet" href="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css"> -->
+  <!-- google fonts Libre+Baskerville, Open+Sans, Varela+Round, Kaushan+Script -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|Varela+Round|Handlee|Kaushan+Script&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- scrollreveal > always include in the head  -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header-body hero-wrap" style="background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), 
+                                                        url('img/bg-blog-healthy.jpg') bottom center/cover no-repeat;">
+      <nav class="navbar navbar-expand-lg d-flex ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <div class="toggler-btn">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </button>
+
+        <a href="index.html" class="navbar-brand order-lg-1 pl-lg-5" data-toggle="tooltip" data-placement="bottom"
+          title="Coffee World">Coffee World</a>
+        <!-- data-html="true" yazaraq,title-da html taglarden istifade ederek tooltipde deyisiklik etmek olar-->
+
+        <div class="order-lg-3 pr-3 pr-sm-5 ">
+          <button class="btn search-header"> <i class="fas fa-search"></i> </button>
+        </div>
+        <!-- <div class="cart-dropdown order-lg-3 pr-3 pr-sm-5">
+          <div class="cart-dropdown-inner">
+            <a href="">
+              <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+              <span class="cart-empty">0</span>
+            </a>
+          </div>
+          <div class="cart-dropdown-out">
+            <p class="cart-text text-center">No products in the card </p>
+          </div>
+        </div> -->
+        <!-- links -->
+        <div class="collapse navbar-collapse order-lg-2 justify-content-center" id="myNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link text-capitalize">əsas səhifə</a>
+            </li>
+            <li class="nav-item ">
+              <a href="menu.html" class="nav-link text-capitalize">menyu</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class=" dropdown-toggle nav-link" href="gallery-coffee.html" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qalereya
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="gallery-coffee.html">Kofe Şop</a>
+                  <a class="dropdown-item" href="gallery-food.html">Qida</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class=" dropdown-toggle nav-link" href="blog-healthy.html" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bloq
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="blog-healthy.html">Sağlam qidalar</a>
+                  <a class="dropdown-item" href="blog-recipe.html">Reseptlər</a>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#contact" class="nav-link text-capitalize">Shop</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-capitalize">haqqımızda</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link text-capitalize">əlaqə</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <input type="text" class="search-header__input" placeholder="Axtar">
+        <button class="btn search-header__close"><i class="fas fa-times" aria-hidden="true"></i></button>
+      </div>
+
+      <hr class="nav-line">
+
+      <header class="header-wrap">
+        <div class="container-fluid">
+          <div class="row  ">
+            <div class="col-md-12">
+              <div class="header-wrap__text">
+                <h1 class="bread">Bloq</h1>
+                <h2 class="text-center no-wrap">Resept</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section id="blog" class="blog-featured py-5 pt-sm-1">
+      <div class="container-fluid">
+        <img src="img/title-above.png" class="title-above d-block mx-auto pt-3 pt-sm-1" alt="Title-above">
+        <div class="row second-row">
+          <div class="col-12">
+            <h3 class="subheading heading-line animate text-center pt-4">Ən çox axtarılanlar</h3>
+          </div>
+        </div>
+        <div class="carousel-blog owl-carousel owl-theme">
+          <div class="mx-2">
+            <div class="card">
+              <img class=" card-img-top" src="img/blog-card-image.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Qırmızı mərci şorbası</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class=" card-img-top" src="img/blog-card-image-2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Əriştəli toyuq şorbası</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class=" card-img-top" src="img/blog-card-image3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Balqabaq kotleti</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class="card-img-top" src="img/blog-card-image.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kartoflu omlet</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class="card-img-top" src="img/blog-card-image-2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">İspanaqlı düyü resepti</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class="card-img-top" src="img/blog-card-image3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Zeytun yağlı lobya</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class="card-img-top" src="img/blog-card-image.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Almalı pankeyk</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2">
+            <div class="card">
+              <img class="card-img-top" src="img/blog-card-image-2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Tərəvəzli şorba</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ən son yenilənmə tarixi: 19.12.2019</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog-healthy py-5">
+      <div class="container">
+        <h3 class="subheading heading-line text-center pt-4">Reseptlər</h3>
+        <div class="row py-4">
+          <div class="col-lg-4 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Tiramisu</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image-2.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Limonlu keks</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image3.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Şorqoğal</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 animate d-none fourth-card">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image.jpg" class="card-img-top blog-card-img" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">resept</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Noxud salatı</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-lg-3 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Su börəyi</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image-2.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Lahmacun</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image3.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Su börəyi</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image3.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Günəbaxan piroqu</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-lg-4 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Xaçapuri</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image-2.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Brokoli şorbası</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 animate">
+            <div class="card-deck mb-3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image3.jpg" class="card-img-top" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">qida</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Brokoli salatı</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  display in medium size -->
+          <div class="col-lg-4 col-md-6 animate d-none fourth-card">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/blog-card-image.jpg" class="card-img-top blog-card-img" alt="blog & Letters">
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">resept</button>
+                  <button class="btn btn-button btn-blog d-inline-block text-uppercase mb-2">tövsiyyə</button>
+                  <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem et odit
+                    sunt aperiam numquam?...</p>
+                  <small class="text-muted d-inline-block">bio,</small>
+                  <small class="text-muted d-inline-block">şam yeməyi,</small>
+                  <small class="text-muted d-inline-block">qida,</small>
+                  <small class="text-muted d-inline-block">ət,</small>
+                  <small class="text-muted d-inline-block">quzu</small>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 dəqiqə əvvəl yeniləndi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <h1 class="heading footer-heading text-center py-4">Coffee World</h1>
+      <div class="container-fluid text-white ">
+        <div class="row text-center d-flex">
+          <div class="footer-col col-md-4 col-sm-6 order-sm-1 pb-4">
+            <h3 class="heading">Haqqımızda</h3>
+            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium
+              placeat corporis beatae vero cumque eum, quas iusto pariatur?...</p>
+            <a href="about.html"><button class="btn btn-button">Daha ətraflı</button></a>
+          </div>
+          <div class="footer-col col-md-4 col-sm-12 order-sm-3">
+            <h3 class="heading">Xəbərlərdən məlumatlı olun</h3>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control footer-email" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Email adresiniz" required>
+                <button class="btn btn-button footer-btn">Abunə olun</button>
+              </div>
+              <small id="emailHelp" class="form-text text-muted pb-3">Biz heç vaxt məlumatlarınızı başqaları ilə
+                paylaşmayacağıq.</small>
+            </form>
+          </div>
+          <div class="footer-col col-md-4 col-sm-6 order-sm-2">
+            <h3 class="heading">Əlaqə</h3>
+            <p class="happyhour-phone">+99451 302 00 66</p>
+            <a href="">
+              <p class="footer-text footer-contact-mail">office@webworld.az</p>
+            </a>
+            <div
+              class="direction-social-icons footer-social d-flex align-items-center justify-content-between mx-auto mb-3">
+              <a href="https://www.facebook.com/webworld.az/"><i class="fab fa-facebook-f "></i></a>
+              <a href="https://www.instagram.com/webworld.az/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center pt-md-0 pt-xl-3">
+          <div class="col-md-12">
+            <p class="footer-text">Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              Created by
+              <a href="http://webworld.az" target="_blank" class="ww">Web World</a> -Tahmasib Shirinzadeh</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="search-overlay"></div>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+          stroke="#cb7152" /></svg></div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- cubeportfolio mosaic -->
+    <!-- <script type="text/javascript"
+            src="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+          <script type="text/javascript"
+            src="http://scriptpie.com/cubeportfolio/live-preview/templates/mosaic/js/main.js"></script> -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- font awesome js  -->
+    <script src="js/all.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
